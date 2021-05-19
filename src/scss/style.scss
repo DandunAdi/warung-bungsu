@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:wght@300;400;700&display=swap");
 
 :root {
   --greenPrimary: rgb(42, 86, 49);
@@ -30,6 +30,14 @@ h6 {
 a {
   text-decoration: none;
 }
+img {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
 
 .flex {
   display: flex;
@@ -47,6 +55,8 @@ a {
 
 .container {
   margin-left: 6rem;
+  min-height: 100vh;
+  position: relative;
 }
 
 .btn {
@@ -75,4 +85,7 @@ a {
 }
 .text-primary {
   color: var(--greenPrimary);
+}
+.text-orange {
+  color: var(--orange);
 }

@@ -1,0 +1,100 @@
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--greenPrimary);
+}
+.title {
+  grid-column: 1 / 6;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  z-index: 9;
+}
+.lead {
+  margin-top: 10rem;
+}
+.cream {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  height: 60vh;
+  background-color: var(--cream);
+  border-bottom-left-radius: 50%;
+  z-index: -9;
+}
+.featured {
+  position: absolute;
+  left: 35%;
+  top: 15%;
+  width: 35vw;
+}
+.featuredOrange {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+  z-index: -1;
+}
+.featuredGreen {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 16rem;
+  height: 6rem;
+  transform: rotate(40deg);
+  background-color: var(--greenSecondary);
+  z-index: -1;
+}
+.ayam {
+  width: 90%;
+}
+
+.openBtn {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.875rem;
+  background-color: var(--greenPrimary);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.openBtn:hover {
+  color: var(--greenPrimary);
+  background-color: #fff;
+  border: 1px solid var(--greenPrimary);
+}
+
+.order {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 0 8px rgba(116, 116, 116, 0.2);
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  color: rgb(187, 187, 187);
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  margin-left: 2rem;
+}
+.attributionLink {
+  color: rgb(187, 187, 187);
+  text-decoration: underline;
+}
