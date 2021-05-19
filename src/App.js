@@ -1,13 +1,22 @@
+import Home from "./pages/Home";
+import { Switch, Route, Link } from "react-router-dom";
+import Menu from "./pages/Menu";
+import Contact from "./pages/Contact";
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="xl">Hello React!</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas alias
-        ea quo natus adipisci. Fugit, rerum debitis! Laborum dicta, doloribus
-        nisi voluptates eligendi animi ducimus soluta id libero laboriosam
-        molestias!
-      </p>
+    <div>
+      <Switch>
+        <Route path="/menu">
+          <Menu />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+      </Switch>
     </div>
   );
 }
