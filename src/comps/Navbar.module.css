@@ -1,0 +1,35 @@
+.header {
+  width: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  color: var(--greenPrimary);
+}
+.container {
+  width: 100%;
+  border-right: 1px solid var(--greenPrimary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  padding: 1rem 0;
+}
+.home {
+  width: 50px;
+  height: 50px;
+  background-color: var(--greenPrimary);
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.linkContainer {
+  height: 30%;
+}
+.link {
+  width: 100%;
+  padding: 1.25rem 0;
+}
+.link:hover {
+  border-right: 3px solid var(--greenPrimary);
+}

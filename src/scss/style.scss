@@ -1,11 +1,11 @@
-$greenPrimary: rgb(42, 86, 49);
-$greenSecondary: rgb(126, 168, 137);
-$orange: rgb(216, 98, 55);
-$cream: rgb(242, 232, 216);
-$black: rgb(0, 0, 0);
-$white: rgb(255, 255, 255);
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:wght@300;400&display=swap");
+
+:root {
+  --greenPrimary: rgb(42, 86, 49);
+  --greenSecondary: rgb(126, 168, 137);
+  --orange: rgb(216, 98, 55);
+  --cream: rgb(242, 232, 216);
+}
 
 * {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ $white: rgb(255, 255, 255);
 }
 
 body {
-  background-color: $white;
+  background-color: white;
   font-family: "Roboto", sans-serif;
 }
 
@@ -25,7 +25,10 @@ h4,
 h5,
 h6 {
   font-family: "Roboto Slab", serif;
-  color: $greenPrimary;
+  color: var(--greenPrimary);
+}
+a {
+  text-decoration: none;
 }
 
 .flex {
@@ -33,9 +36,26 @@ h6 {
   justify-content: center;
   align-items: center;
 
+  &-column {
+    flex-direction: column;
+  }
+
   &-between {
     justify-content: space-between;
   }
+}
+
+.container {
+  margin-left: 6rem;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  border: 1px solid var(--greenPrimary);
+  color: var(--greenPrimary);
+  border-radius: 2rem;
+  display: inline-block;
 }
 
 .xl {
@@ -49,4 +69,10 @@ h6 {
 }
 .sm {
   font-size: 0.875rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: var(--greenPrimary);
 }

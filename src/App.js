@@ -1,12 +1,14 @@
 import Home from "./pages/Home";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Navbar from "./comps/Navbar";
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Switch>
         <Route path="/menu">
           <Menu />
