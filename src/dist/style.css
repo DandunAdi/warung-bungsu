@@ -75,6 +75,12 @@ img {
   overflow: hidden;
 }
 
+@media (max-width: 64rem) {
+  .container {
+    margin: 0;
+  }
+}
+
 .btn {
   cursor: pointer;
   padding: 0.25rem 1rem;

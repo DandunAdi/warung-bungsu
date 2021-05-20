@@ -58,6 +58,10 @@ img {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 64rem) {
+    margin: 0;
+  }
 }
 
 .btn {

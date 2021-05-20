@@ -72,6 +72,7 @@
   grid-column: 1 / 7;
   padding: 2rem;
   justify-content: flex-start;
+  z-index: 1;
 }
 .openBtn {
   cursor: pointer;
@@ -107,4 +108,32 @@
 .attributionLink {
   color: rgb(187, 187, 187);
   text-decoration: underline;
+}
+
+@media (max-width: 64rem) {
+  .title {
+    grid-column: 1 / 13;
+  }
+  .cream {
+    width: 60vw;
+    height: 80vh;
+  }
+  .featured {
+    top: auto;
+    bottom: 20%;
+  }
+  .tea {
+    top: 40%;
+  }
+
+  .action {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .openBtn,
+  .order {
+    width: 70%;
+    margin: 0;
+    margin-top: 1rem;
+  }
 }
