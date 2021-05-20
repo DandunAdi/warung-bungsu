@@ -32,3 +32,9 @@
 .link:hover {
   border-right: 3px solid var(--greenPrimary);
 }
+
+@media (max-width: 64rem) {
+  .header {
+    display: none;
+  }
+}
