@@ -10,6 +10,17 @@ const Home = () => {
             Dari Bahan Segar Dengan Kualitas Terbaik
           </h1>
         </div>
+        <div className={styles.action + " flex"}>
+          <div className={styles.open}>
+            <span className={styles.openBtn}>
+              <i className="far fa-clock"></i> BUKA SETIAP HARI
+            </span>
+          </div>
+          <div className={styles.order + " sm"}>
+            <i className="fa fa-utensils text-orange"></i>{" "}
+            <span>TERIMA PESANAN</span>
+          </div>
+        </div>
       </section>
       <div className={styles.cream}></div>
       <div className={styles.featured}>
@@ -17,14 +28,7 @@ const Home = () => {
         <div className={styles.featuredOrange}></div>
         <div className={styles.featuredGreen}></div>
       </div>
-      <div className={styles.open}>
-        <span className={styles.openBtn}>
-          <i class="far fa-clock"></i> BUKA SETIAP HARI
-        </span>
-      </div>
-      <div className={styles.order + " sm"}>
-        <i class="fa fa-utensils text-orange"></i> <span>TERIMA PESANAN</span>
-      </div>
+      <img className={styles.tea + " shadow"} src="/tea.png" alt="tea" />
       <div className={styles.attribution}>
         <p>
           Coded by{" "}
