@@ -5,7 +5,7 @@ const Home = () => {
     <main className="container">
       <section className="grid">
         <div className={styles.title}>
-          <p className={styles.logo}>WARUNG BUNGSU</p>
+          <img className={styles.logo} src="/logo.png" alt="logo" />
           <h1 className={styles.lead + " xl"}>
             Dari Bahan Segar Dengan Kualitas Terbaik
           </h1>
