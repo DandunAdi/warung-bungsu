@@ -72,6 +72,7 @@ img {
   margin-left: 6rem;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .btn {
@@ -100,6 +101,14 @@ img {
 
 .sm {
   font-size: 0.875rem;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
 }
 
 .text-center {

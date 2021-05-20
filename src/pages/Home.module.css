@@ -51,12 +51,20 @@
 }
 .ayam {
   width: 90%;
+  border-radius: 50%;
 }
 .tea {
-  width: 210px;
+  width: 15%;
   position: absolute;
   right: 10%;
-  bottom: 20%;
+  top: 5%;
+  transform: rotate(30deg);
+}
+.bebek {
+  position: absolute;
+  top: 55%;
+  right: -5%;
+  width: 30%;
   border-radius: 50%;
 }
 .action {
@@ -68,8 +76,6 @@
 .openBtn {
   cursor: pointer;
   color: #fff;
-  font-weight: 300;
-  font-size: 0.875rem;
   background-color: var(--greenPrimary);
   padding: 0.75rem 1rem;
   border-radius: 5px;
@@ -86,9 +92,6 @@
   padding: 0.75rem 1.5rem;
   box-shadow: 0 0 8px rgba(116, 116, 116, 0.4);
   border-radius: 5px;
-  display: inline-block;
-  font-size: 0.875rem;
-  font-weight: 300;
   margin-left: 2rem;
 }
 

@@ -11,24 +11,23 @@ const Home = () => {
           </h1>
         </div>
         <div className={styles.action + " flex"}>
-          <div className={styles.open}>
-            <span className={styles.openBtn}>
-              <i className="far fa-clock"></i> BUKA SETIAP HARI
-            </span>
+          <div className={styles.openBtn + " sm thin ls-2"}>
+            <i className="fa fa-utensils"></i> BUKA SETIAP HARI
           </div>
-          <div className={styles.order + " sm"}>
-            <i className="fa fa-utensils text-orange"></i>{" "}
-            <span>TERIMA PESANAN</span>
+
+          <div className={styles.order + " sm thin text-orange ls-2"}>
+            <i className="fa fa-phone-alt"></i> <span>TERIMA PESANAN</span>
           </div>
         </div>
       </section>
       <div className={styles.cream}></div>
       <div className={styles.featured}>
-        <img className={styles.ayam} src="/IMG.png" alt="ayams" />
+        <img className={styles.ayam} src="/ayam.png" alt="ayams" />
         <div className={styles.featuredOrange}></div>
         <div className={styles.featuredGreen}></div>
       </div>
-      <img className={styles.tea + " shadow"} src="/tea.png" alt="tea" />
+      <img className={styles.tea} src="/tea.png" alt="tea" />
+      <img className={styles.bebek} src="/bebek.png" alt="bebek" />
       <div className={styles.attribution}>
         <p>
           Coded by{" "}
