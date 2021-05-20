@@ -6,20 +6,20 @@ const Navbar = () => {
     <header className={styles.header + " flex text-center"}>
       <div className={styles.container}>
         <Link to="/">
-          <div className={styles.home + " flex"}>
+          <div className={styles.navLink + " btn btn-primary flex"}>
             <i className="fa fa-home lg"></i>
           </div>
         </Link>
-        <nav
-          className={styles.linkContainer + " flex flex-column flex-between"}
-        >
-          <Link to="/menu" className={styles.link}>
-            <span className="text-primary">MENU</span>
-          </Link>
-          <Link to="/contact" className={styles.link}>
-            <span className="text-primary">CONTACT</span>
-          </Link>
-        </nav>
+        <Link to="/menu">
+          <div className={styles.navLink + " btn btn-primary flex"}>
+            <i className="fa fa-utensils lg"></i>
+          </div>
+        </Link>
+        <Link to="/contact">
+          <div className={styles.navLink + " btn btn-primary flex"}>
+            <i className="fa fa-phone-alt lg"></i>
+          </div>
+        </Link>
         <i className="fab fa-instagram lg"></i>
       </div>
     </header>

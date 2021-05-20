@@ -77,10 +77,13 @@ img {
 .btn {
   cursor: pointer;
   padding: 0.25rem 1rem;
-  border: 1px solid var(--greenPrimary);
-  color: var(--greenPrimary);
   border-radius: 2rem;
   display: inline-block;
+}
+
+.btn-primary {
+  border: 1px solid var(--greenPrimary);
+  color: var(--greenPrimary);
 }
 
 .xl {
