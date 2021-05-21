@@ -154,16 +154,25 @@
     display: none;
   }
   .featured {
-    top: 70%;
+    width: 50%;
+    top: 60%;
     left: 20%;
     bottom: auto;
   }
-  .featuredOrange,
+  .bebek {
+    width: 40%;
+    top: 40%;
+  }
+  .cream {
+    height: 50%;
+  }
   .featuredGreen {
-    width: 5rem;
+    width: 7rem;
+    height: 2rem;
   }
   .featuredOrange {
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
   }
   .tea {
     top: 50%;
