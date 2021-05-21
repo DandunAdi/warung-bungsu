@@ -1,3 +1,23 @@
+.contact {
+  min-height: 100vh;
+  padding: 2rem;
+  margin-top: 4rem;
+  position: relative;
+}
+.content {
+  width: 50%;
+}
+.map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 85%;
+  border-bottom-left-radius: 10rem;
+  overflow: hidden;
+  border-left: 5px solid var(--cream);
+  border-bottom: 5px solid var(--cream);
+}
 .attribution {
   font-size: 0.7rem;
   color: rgb(187, 187, 187);
