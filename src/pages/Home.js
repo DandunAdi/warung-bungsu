@@ -39,21 +39,6 @@ const Home = () => {
       <img className={styles.tea} src="/tea.png" alt="tea" />
 
       <img className={styles.bebek} src="/bebek.png" alt="bebek" />
-
-      <div className={styles.attribution}>
-        <p>
-          Coded by{" "}
-          <a
-            href="https://www.dandun.xyz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.attributionLink}
-          >
-            DDD
-          </a>{" "}
-        </p>
-        <p>All Right Reserved - Warung Bungsu &copy;2021</p>
-      </div>
     </div>
   );
 };

@@ -1,0 +1,20 @@
+.attribution {
+  font-size: 0.7rem;
+  color: rgb(187, 187, 187);
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  margin-left: 2rem;
+}
+.attributionLink {
+  color: rgb(187, 187, 187);
+  text-decoration: underline;
+}
+
+@media (max-width: 36rem) {
+  .attribution {
+    margin-left: 1rem;
+    bottom: 1rem;
+  }
+}

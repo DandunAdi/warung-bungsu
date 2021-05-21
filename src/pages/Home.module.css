@@ -104,20 +104,6 @@
   background-color: var(--orange);
 }
 
-.attribution {
-  font-size: 0.7rem;
-  color: rgb(187, 187, 187);
-  letter-spacing: 1px;
-  position: absolute;
-  bottom: 5%;
-  left: 0;
-  margin-left: 2rem;
-}
-.attributionLink {
-  color: rgb(187, 187, 187);
-  text-decoration: underline;
-}
-
 @media (max-width: 64rem) {
   .title {
     grid-column: 1 / 13;
@@ -156,21 +142,16 @@
     margin: 0;
   }
   .lead {
-    margin-top: 3rem;
-    font-size: 2.5rem;
+    margin-top: 4rem;
+    font-size: xx-large;
   }
   .action {
     grid-column: 1 / 13;
-    flex-direction: row;
     padding: 1rem;
   }
   .openBtn,
   .order {
-    margin-top: 0;
-    height: 100%;
-  }
-  .order {
-    margin-left: 1rem;
+    display: none;
   }
   .featured {
     top: 70%;
