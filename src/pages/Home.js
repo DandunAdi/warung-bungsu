@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 
 const Home = () => {
@@ -11,13 +12,17 @@ const Home = () => {
           </h1>
         </div>
         <div className={styles.action + " flex"}>
-          <div className={styles.openBtn + " sm thin ls-2"}>
-            <i className="fa fa-utensils"></i> BUKA SETIAP HARI
-          </div>
+          <Link to="menu">
+            <div className={styles.openBtn + " sm thin ls-2"}>
+              <i className="fa fa-utensils"></i> BUKA SETIAP HARI
+            </div>
+          </Link>
 
-          <div className={styles.order + " sm thin text-orange ls-2"}>
-            <i className="fa fa-phone-alt"></i> <span>TERIMA PESANAN</span>
-          </div>
+          <Link to="contact">
+            <div className={styles.order + " sm thin text-orange ls-2"}>
+              <i className="fa fa-phone-alt"></i> <span>TERIMA PESANAN</span>
+            </div>
+          </Link>
         </div>
       </section>
       <div className={styles.cream}></div>
