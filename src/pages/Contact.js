@@ -1,14 +1,52 @@
 import styles from "./Contact.module.css";
 
 const Contact = () => {
+  // Set a cross-site cookie for third-party contexts
+  document.cookie = "SameSite=Strict;";
   return (
     <div className={styles.contact}>
       <div className={styles.content}>
-        <h2 className="lg">Kami Buka Setiap Hari</h2>
+        <h2 className="lg" style={{ marginBottom: "2rem" }}>
+          Kami Buka Setiap Hari
+        </h2>
         <p className="md ls-2">
           Silahkan hubungi kami untuk informasi dan pemesanan.
         </p>
+        <div className={styles.main + " text-primary"}>
+          <div className={styles.card + " shadow"}>
+            <i className="fa fa-phone-alt lead"></i>
+            <span
+              className="ls-2"
+              style={{ marginLeft: "1rem", fontSize: "1.25rem" }}
+            >
+              0811-7888-78
+            </span>
+          </div>
+          <div className={styles.card + " shadow"}>
+            <i className="fab fa-instagram lead"></i>
+            <span className="ls-2" style={{ marginLeft: "1rem" }}>
+              @warung_bungsu.tng
+            </span>
+          </div>
+          <div className={styles.card + " shadow"}>
+            <i className="fa fa-map-marker-alt lead"></i>
+            <span className="md ls-2" style={{ marginLeft: "1rem" }}>
+              Jl. Marsekal Suryadarma Neglasari - Tangerang
+            </span>
+          </div>
+        </div>
+
+        <h3 className="lead ls-2">Kami tersedia juga di:</h3>
+        <div className={styles.delivery + " flex"}>
+          <div className="grab" style={{ marginRight: "2rem" }}>
+            <img src="/grab.png" alt="grab-food" />
+          </div>
+          <div className="gofood">
+            <img src="/go_food.png" alt="go-food" />
+          </div>
+        </div>
       </div>
+
       <div className={styles.map}>
         <iframe
           title="Map"
@@ -16,7 +54,7 @@ const Contact = () => {
           width="100%"
           height="100%"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
         ></iframe>
       </div>
