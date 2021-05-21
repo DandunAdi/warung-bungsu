@@ -1,8 +1,6 @@
 import styles from "./Contact.module.css";
 
 const Contact = () => {
-  // Set a cross-site cookie for third-party contexts
-  document.cookie = "SameSite=Strict;";
   return (
     <div className={styles.contact}>
       <div className={styles.content}>
@@ -15,12 +13,16 @@ const Contact = () => {
         <div className={styles.main + " text-primary"}>
           <div className={styles.card + " shadow"}>
             <i className="fa fa-phone-alt lead"></i>
-            <span
+            <h4
               className="ls-2"
-              style={{ marginLeft: "1rem", fontSize: "1.25rem" }}
+              style={{
+                marginLeft: "1rem",
+                fontSize: "1.25rem",
+                fontWeight: 500,
+              }}
             >
               0811-7888-78
-            </span>
+            </h4>
           </div>
           <div className={styles.card + " shadow"}>
             <i className="fab fa-instagram lead"></i>
@@ -36,7 +38,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <h3 className="lead ls-2">Kami tersedia juga di:</h3>
+        <h3 className="lead ls-2">Tersedia juga di:</h3>
         <div className={styles.delivery + " flex"}>
           <div className="grab" style={{ marginRight: "2rem" }}>
             <img src="/grab.png" alt="grab-food" />
