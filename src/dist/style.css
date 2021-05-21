@@ -93,12 +93,20 @@ img {
   color: var(--greenPrimary);
 }
 
+.san-serif {
+  font-family: "Roboto", sans-serif;
+}
+
 .xl {
   font-size: 3.125rem;
 }
 
 .lg {
-  font-size: 1.25rem;
+  font-size: 2.5rem;
+}
+
+.lead {
+  font-size: 1.5rem;
 }
 
 .md {

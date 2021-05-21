@@ -1,0 +1,54 @@
+.menu {
+  min-height: 100vh;
+  padding: 2rem;
+}
+.title {
+  margin: 0 auto;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+.card {
+  box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+  padding: 3rem;
+  border-radius: 8px;
+  transition: all 300ms ease-in-out;
+}
+.card:hover {
+  background-color: var(--cream);
+}
+.cardTitle {
+  margin-top: 2rem;
+}
+
+@media (max-width: 64rem) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .menu {
+    padding: 1rem;
+  }
+  .title {
+    font-size: x-large;
+  }
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+  .card {
+    padding: 1rem 0.5rem;
+  }
+  .cardTitle {
+    font-size: medium;
+    margin-top: 0.5rem;
+  }
+}

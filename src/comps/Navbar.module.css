@@ -21,6 +21,7 @@
   height: 3rem;
   width: 3rem;
   display: flex;
+  font-size: 1.125rem;
 }
 .linkContainer {
   height: 30%;
