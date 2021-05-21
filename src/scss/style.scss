@@ -57,7 +57,7 @@ img {
   margin-left: 6rem;
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 
   @media (max-width: 64rem) {
     margin: 0;
