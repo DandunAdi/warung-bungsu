@@ -44,11 +44,8 @@
   .title {
     max-width: 100%;
   }
-  .mainTitle {
-    font-size: x-large;
-  }
+
   .subtitle {
-    font-size: small;
     max-width: 100%;
   }
   .content {
@@ -59,7 +56,6 @@
     padding: 1rem 0.5rem;
   }
   .cardTitle {
-    font-size: medium;
     margin-top: 0.5rem;
   }
 }
