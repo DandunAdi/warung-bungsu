@@ -36,9 +36,15 @@ const meals = [
 const Menu = () => {
   return (
     <section className={styles.menu}>
-      <h2 className={styles.title + " lg text-center"}>
-        Aneka Sajian Dengan Rasa Mantap Harga Hemat
-      </h2>
+      <div className={styles.title + "  text-center text-primary"}>
+        <h2 className={styles.mainTitle + " lg"}>
+          Aneka Sajian Dengan Rasa Mantap Harga Hemat
+        </h2>
+        <p className={styles.subtitle + " md ls-2"}>
+          Tersedia menu utama Ayam dan Bebek. Dengan teknik masak presto dan
+          bumbu oles spesial, dijamin tekstur daging lunak dan bumbu meresap.
+        </p>
+      </div>
 
       <div className={styles.content}>
         {meals.map((meal) => (
