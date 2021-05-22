@@ -47,8 +47,29 @@
 }
 
 @media (max-width: 36rem) {
+  .contact {
+    padding: 1rem;
+  }
+  .content {
+    width: 100%;
+  }
+  .main {
+    margin-bottom: 2rem;
+  }
+  .map {
+    position: initial;
+    width: 100%;
+    box-shadow: 0 0 8px rgba(116, 116, 116, 0.2);
+    border-radius: 0;
+    margin-bottom: 3rem;
+  }
   .attribution {
     margin-left: 1rem;
     bottom: 1rem;
+  }
+  .delivery {
+    margin-top: 2rem;
+    width: 100%;
+    margin-bottom: 4rem;
   }
 }
