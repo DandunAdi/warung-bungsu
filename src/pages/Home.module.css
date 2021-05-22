@@ -54,6 +54,7 @@
 .ayam {
   width: 90%;
   border-radius: 50%;
+  z-index: 1;
 }
 .kangkung {
   width: 20%;
@@ -61,6 +62,7 @@
   right: 5%;
   top: 5%;
   transform: rotate(30deg);
+  z-index: -1;
 }
 .bebek {
   position: absolute;
@@ -68,6 +70,7 @@
   right: -5%;
   width: 30%;
   border-radius: 50%;
+  z-index: 0;
 }
 .action {
   grid-row: 2 / 3;

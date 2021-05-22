@@ -1,6 +1,15 @@
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 import styles from "./Home.module.css";
 
 const Home = () => {
+  const { scrollYProgress } = useViewportScroll();
+  const yPosFast = useTransform(scrollYProgress, [0, 0.3], [0, -380]);
+  const yPosMedium = useTransform(scrollYProgress, [0, 0.3], [0, -300]);
+  const yPosSlow = useTransform(scrollYProgress, [0, 0.3], [0, -150]);
+
+  const rotFast = useTransform(scrollYProgress, [0, 0.3], [0, -80]);
+  const rotSlow = useTransform(scrollYProgress, [0, 0.3], [0, 40]);
+
   return (
     <div className={styles.home}>
       <div className="grid">
@@ -31,14 +40,35 @@ const Home = () => {
       <div className={styles.cream}></div>
 
       <div className={styles.featured}>
-        <img className={styles.ayam} src="/menu/ayam_goreng.png" alt="ayams" />
-        <div className={styles.featuredOrange}></div>
-        <div className={styles.featuredGreen}></div>
+        <motion.img
+          className={styles.ayam}
+          src="/menu/ayam_goreng.png"
+          alt="ayams"
+          style={{ y: yPosFast, rotateZ: rotFast }}
+        />
+        <motion.div
+          className={styles.featuredOrange}
+          style={{ y: yPosSlow }}
+        ></motion.div>
+        <motion.div
+          className={styles.featuredGreen}
+          style={{ y: yPosSlow, rotateZ: 30 }}
+        ></motion.div>
       </div>
 
-      <img className={styles.kangkung} src="/menu/kangkung.png" alt="tea" />
+      <motion.img
+        className={styles.kangkung}
+        src="/menu/kangkung.png"
+        alt="tea"
+        style={{ y: yPosSlow }}
+      />
 
-      <img className={styles.bebek} src="/menu/bebek_bakar.png" alt="bebek" />
+      <motion.img
+        className={styles.bebek}
+        src="/menu/bebek_bakar.png"
+        alt="bebek"
+        style={{ y: yPosMedium, rotateZ: rotSlow }}
+      />
     </div>
   );
 };
