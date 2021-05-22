@@ -2,6 +2,7 @@
   margin-top: 3rem;
   min-height: 100vh;
   padding: 2rem;
+  position: relative;
 }
 .title {
   margin: 0 auto;
@@ -23,12 +24,36 @@
   padding: 10%;
   border-radius: 8px;
   transition: all 300ms ease-in-out;
+  background-color: #fff;
+  z-index: 9;
 }
 .card:hover {
   background-color: var(--cream);
 }
 .cardTitle {
   margin-top: 2rem;
+}
+.background {
+}
+
+.pink {
+  width: 40%;
+  height: 10rem;
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  background-color: var(--pink);
+  z-index: -9;
+}
+.blue {
+  width: 19rem;
+  height: 19rem;
+  border-radius: 50%;
+  background-color: var(--blue);
+  position: absolute;
+  left: 20%;
+  top: 60%;
+  z-index: -9;
 }
 
 @media (max-width: 64rem) {

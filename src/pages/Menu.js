@@ -1,4 +1,49 @@
 import styles from "./Menu.module.css";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
+
+const Menu = () => {
+  const { scrollYProgress } = useViewportScroll();
+
+  const yPosFast = useTransform(scrollYProgress, [0.3, 0.9], [0, -450]);
+  const yPosStay = useTransform(scrollYProgress, [0.1, 0.8], [0, 400]);
+  const rotSlow = useTransform(scrollYProgress, [0.1, 0.6], [20, 60]);
+
+  return (
+    <section className={styles.menu}>
+      <div className={styles.title + "  text-center text-primary"}>
+        <h2 className={styles.mainTitle + " lg"}>
+          Aneka Sajian Dengan Rasa Mantap Harga Hemat
+        </h2>
+        <p className={styles.subtitle + " md ls-2"}>
+          Tersedia menu utama Ayam dan Bebek. Dengan teknik masak presto dan
+          bumbu oles spesial, dijamin tekstur daging lunak dan bumbu meresap.
+        </p>
+      </div>
+
+      <div className={styles.content}>
+        {meals.map((meal) => (
+          <div className={styles.card} key={meal.id}>
+            <img src={meal.image} alt={meal.name} />
+            <h3 className={styles.cardTitle + " lead text-center"}>
+              {meal.name}
+            </h3>
+          </div>
+        ))}
+      </div>
+
+      <div className={styles.background}>
+        <motion.div
+          className={styles.pink}
+          style={{ rotateZ: rotSlow, y: yPosStay }}
+        ></motion.div>
+        <motion.div
+          className={styles.blue}
+          style={{ y: yPosFast, x: yPosFast }}
+        ></motion.div>
+      </div>
+    </section>
+  );
+};
 
 const meals = [
   {
@@ -47,32 +92,5 @@ const meals = [
     image: "/menu/kangkung.png",
   },
 ];
-
-const Menu = () => {
-  return (
-    <section className={styles.menu}>
-      <div className={styles.title + "  text-center text-primary"}>
-        <h2 className={styles.mainTitle + " lg"}>
-          Aneka Sajian Dengan Rasa Mantap Harga Hemat
-        </h2>
-        <p className={styles.subtitle + " md ls-2"}>
-          Tersedia menu utama Ayam dan Bebek. Dengan teknik masak presto dan
-          bumbu oles spesial, dijamin tekstur daging lunak dan bumbu meresap.
-        </p>
-      </div>
-
-      <div className={styles.content}>
-        {meals.map((meal) => (
-          <div className={styles.card} key={meal.id}>
-            <img src={meal.image} alt={meal.name} />
-            <h3 className={styles.cardTitle + " lead text-center"}>
-              {meal.name}
-            </h3>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-};
 
 export default Menu;
