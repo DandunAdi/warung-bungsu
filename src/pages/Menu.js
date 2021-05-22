@@ -4,32 +4,47 @@ const meals = [
   {
     id: 1,
     name: "Ayam Goreng",
-    image: "/ayam.png",
+    image: "/menu/ayam_goreng.png",
   },
   {
     id: 2,
     name: "Ayam Bakar",
-    image: "/ayam.png",
+    image: "/menu/ayam_bakar.png",
   },
   {
     id: 3,
     name: "Ayam Bakar Madu",
-    image: "/ayam.png",
+    image: "/menu/ayam_bakar_madu.png",
   },
   {
     id: 4,
     name: "Bebek Goreng",
-    image: "/bebek.png",
+    image: "/menu/bebek_goreng.png",
   },
   {
     id: 5,
     name: "Bebek Bakar",
-    image: "/bebek.png",
+    image: "/menu/bebek_bakar.png",
   },
   {
     id: 6,
     name: "Bebek Bakar Madu",
-    image: "/bebek.png",
+    image: "/menu/bebek_bakar_madu.png",
+  },
+  {
+    id: 7,
+    name: "Pecel Lele",
+    image: "/menu/pecel_lele.png",
+  },
+  {
+    id: 8,
+    name: "Tumis Buncis",
+    image: "/menu/buncis.png",
+  },
+  {
+    id: 9,
+    name: "Tumis Kangkung",
+    image: "/menu/kangkung.png",
   },
 ];
 
@@ -55,12 +70,6 @@ const Menu = () => {
             </h3>
           </div>
         ))}
-        <div className={styles.card}>
-          <img src="/ayam.png" alt="ayam-goreng" />
-          <h3 className={styles.cardTitle + " lead text-center"}>
-            Ayam Goreng
-          </h3>
-        </div>
       </div>
     </section>
   );
