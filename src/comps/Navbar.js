@@ -16,7 +16,13 @@ const Navbar = () => {
           <i className="fa fa-phone-alt "></i>
         </div>
 
-        <i className="fab fa-instagram "></i>
+        <a
+          href="https://www.instagram.com/warung_bungsu.tng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-instagram text-primary"></i>
+        </a>
       </div>
     </header>
   );
