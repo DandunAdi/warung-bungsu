@@ -31,14 +31,14 @@ const Home = () => {
       <div className={styles.cream}></div>
 
       <div className={styles.featured}>
-        <img className={styles.ayam} src="/ayam.png" alt="ayams" />
+        <img className={styles.ayam} src="/menu/ayam_goreng.png" alt="ayams" />
         <div className={styles.featuredOrange}></div>
         <div className={styles.featuredGreen}></div>
       </div>
 
-      <img className={styles.tea} src="/tea.png" alt="tea" />
+      <img className={styles.kangkung} src="/menu/kangkung.png" alt="tea" />
 
-      <img className={styles.bebek} src="/bebek.png" alt="bebek" />
+      <img className={styles.bebek} src="/menu/bebek_bakar.png" alt="bebek" />
     </div>
   );
 };
