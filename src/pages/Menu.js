@@ -1,6 +1,31 @@
 import styles from "./Menu.module.css";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 
+const scaleMotion = {
+  rest: {
+    color: "grey",
+    y: 0,
+    scale: 1,
+    rotate: 0,
+    transition: {
+      duration: 0.5,
+      type: "tween",
+      ease: "easeIn",
+    },
+  },
+  hover: {
+    color: "blue",
+    y: -30,
+    scale: 1.1,
+    rotate: 5,
+    transition: {
+      duration: 0.4,
+      type: "tween",
+      ease: "easeOut",
+    },
+  },
+};
+
 const Menu = () => {
   const { scrollYProgress } = useViewportScroll();
 
@@ -20,16 +45,26 @@ const Menu = () => {
         </p>
       </div>
 
-      <div className={styles.content}>
+      <motion.div className={styles.content}>
         {meals.map((meal) => (
-          <div className={styles.card} key={meal.id}>
-            <img src={meal.image} alt={meal.name} />
+          <motion.div
+            initial="rest"
+            whileHover="hover"
+            animate="rest"
+            className={styles.card}
+            key={meal.id}
+          >
+            <motion.img
+              variants={scaleMotion}
+              src={meal.image}
+              alt={meal.name}
+            />
             <h3 className={styles.cardTitle + " lead text-center"}>
               {meal.name}
             </h3>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       <div className={styles.background}>
         <motion.div
