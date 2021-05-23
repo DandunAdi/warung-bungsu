@@ -3,6 +3,7 @@
   padding: 2rem;
   margin-top: 4rem;
   position: relative;
+  transition: all 10ms ease-in-out;
 }
 .content {
   width: 48%;
