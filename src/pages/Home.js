@@ -11,7 +11,7 @@ const Home = () => {
   const rotSlow = useTransform(scrollYProgress, [0, 0.3], [0, 30]);
 
   return (
-    <div className={styles.home}>
+    <div className={styles.home} id="Home">
       <div className="grid">
         <div className={styles.title}>
           <img className={styles.logo} src="/logo.png" alt="logo" />

@@ -34,7 +34,7 @@ const Menu = () => {
   const rotSlow = useTransform(scrollYProgress, [0.1, 0.6], [20, 60]);
 
   return (
-    <section className={styles.menu}>
+    <section className={styles.menu} id="Menu">
       <div className={styles.title + "  text-center text-primary"}>
         <h2 className={styles.mainTitle + " lg"}>
           Aneka Sajian Dengan Rasa Mantap Harga Hemat
