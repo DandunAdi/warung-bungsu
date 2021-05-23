@@ -8,7 +8,7 @@ const Home = () => {
   const yPosSlow = useTransform(scrollYProgress, [0, 0.3], [0, -150]);
 
   const rotFast = useTransform(scrollYProgress, [0, 0.3], [0, -80]);
-  const rotSlow = useTransform(scrollYProgress, [0, 0.3], [0, 40]);
+  const rotSlow = useTransform(scrollYProgress, [0, 0.3], [0, 30]);
 
   return (
     <div className={styles.home}>
