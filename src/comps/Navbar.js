@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <header className={styles.header + " flex text-center"}>
+    <div className={styles.header + " flex text-center"}>
       <div className={styles.container}>
         <Link
           activeClass={styles.active}
@@ -46,7 +46,7 @@ const Navbar = () => {
           <i className="fab fa-instagram text-primary"></i>
         </a>
       </div>
-    </header>
+    </div>
   );
 };
 
