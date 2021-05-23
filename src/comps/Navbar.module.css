@@ -22,6 +22,11 @@
   width: 3rem;
   display: flex;
   font-size: 1.125rem;
+  transition: all 300ms ease-in-out;
+}
+.active {
+  background-color: var(--greenPrimary);
+  color: #fff;
 }
 .linkContainer {
   height: 30%;

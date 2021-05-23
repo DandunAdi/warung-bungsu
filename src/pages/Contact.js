@@ -1,18 +1,8 @@
 import styles from "./Contact.module.css";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 const Contact = () => {
-  const { scrollYProgress } = useViewportScroll();
-
-  const yPosSlow = useTransform(scrollYProgress, [0.7, 0.95], [500, 0]);
-  const opacity = useTransform(scrollYProgress, [0.7, 0.9], [0.1, 1]);
-
   return (
-    <motion.div
-      className={styles.contact}
-      style={{ y: yPosSlow, opacity: opacity }}
-      id="Contact"
-    >
+    <div className={styles.contact} id="Contact">
       <div className={styles.content}>
         <h2 className="lg" style={{ marginBottom: "2rem" }}>
           Kami Buka Setiap Hari
@@ -84,7 +74,7 @@ const Contact = () => {
         </p>
         <p>All Right Reserved - Warung Bungsu &copy;2021</p>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

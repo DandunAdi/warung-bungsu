@@ -1,47 +1,41 @@
 import styles from "./Navbar.module.css";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
     <header className={styles.header + " flex text-center"}>
       <div className={styles.container}>
         <Link
-          activeClass="active"
+          activeClass={styles.active}
           to="Home"
           spy={true}
           smooth={true}
-          offset={-70}
           duration={1000}
+          className={styles.navLink + " btn btn-primary flex"}
         >
-          <div className={styles.navLink + " btn btn-primary flex"}>
-            <i className="fa fa-home"></i>
-          </div>
+          <i className="fa fa-home"></i>
         </Link>
 
         <Link
-          activeClass="active"
+          activeClass={styles.active}
           to="Menu"
           spy={true}
           smooth={true}
-          offset={-70}
           duration={1500}
+          className={styles.navLink + " btn btn-primary flex"}
         >
-          <div className={styles.navLink + " btn btn-primary flex"}>
-            <i className="fa fa-utensils "></i>
-          </div>
+          <i className="fa fa-utensils "></i>
         </Link>
 
         <Link
-          activeClass="active"
+          activeClass={styles.active}
           to="Contact"
           spy={true}
           smooth={true}
-          offset={-70}
-          duration={3000}
+          duration={2000}
+          className={styles.navLink + " btn btn-primary flex"}
         >
-          <div className={styles.navLink + " btn btn-primary flex"}>
-            <i className="fa fa-phone-alt "></i>
-          </div>
+          <i className="fa fa-phone-alt "></i>
         </Link>
 
         <a
