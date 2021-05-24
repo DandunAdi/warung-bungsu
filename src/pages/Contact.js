@@ -1,6 +1,13 @@
 import styles from "./Contact.module.css";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 const Contact = () => {
+  const { scrollYProgress } = useViewportScroll();
+
+  const yPosFast = useTransform(scrollYProgress, [0.8, 1], [0, -200]);
+  const yPosStay = useTransform(scrollYProgress, [0.8, 1], [0, 200]);
+  const rotSlow = useTransform(scrollYProgress, [0.8, 1], [-20, -60]);
+
   return (
     <div className={styles.contact} id="Contact">
       <div className={styles.content}>
@@ -58,6 +65,17 @@ const Contact = () => {
             <img src="/go_food.png" alt="go-food" />
           </div>
         </div>
+      </div>
+
+      <div className="background">
+        <motion.div
+          className={styles.bgBlue}
+          style={{ y: yPosStay, rotateZ: rotSlow }}
+        ></motion.div>
+        <motion.div
+          className={styles.bgOrange}
+          style={{ y: yPosFast }}
+        ></motion.div>
       </div>
 
       <div className={styles.attribution}>

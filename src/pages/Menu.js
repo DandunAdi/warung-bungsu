@@ -48,7 +48,7 @@ const Menu = () => {
         ></motion.div>
         <motion.div
           className={styles.green}
-          style={{ y: yPosFast, x: yPosFast }}
+          style={{ y: yPosFast }}
         ></motion.div>
         <motion.div
           className={styles.blue}

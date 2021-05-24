@@ -17,6 +17,7 @@
   padding: 1rem 2rem;
   margin-bottom: 1rem;
   border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .delivery {
   width: 80%;
@@ -30,9 +31,28 @@
   height: 85%;
   border-bottom-left-radius: 10rem;
   overflow: hidden;
-  /* border-left: 5px solid var(--cream);
-  border-bottom: 5px solid var(--cream); */
 }
+
+.bgBlue {
+  background-color: var(--cream);
+  width: 15rem;
+  height: 5rem;
+  position: absolute;
+  top: 33%;
+  left: 40%;
+  z-index: -9;
+}
+.bgOrange {
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+  position: absolute;
+  left: -3%;
+  top: 30%;
+  z-index: -9;
+}
+
 .attribution {
   font-size: 0.7rem;
   color: rgb(187, 187, 187);
