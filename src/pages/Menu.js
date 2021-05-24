@@ -1,35 +1,10 @@
 import styles from "./Menu.module.css";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 
-const scaleMotion = {
-  rest: {
-    color: "grey",
-    y: 0,
-    scale: 1,
-    rotate: 0,
-    transition: {
-      duration: 0.5,
-      type: "tween",
-      ease: "easeIn",
-    },
-  },
-  hover: {
-    color: "blue",
-    y: -30,
-    scale: 1.1,
-    rotate: 5,
-    transition: {
-      duration: 0.4,
-      type: "tween",
-      ease: "easeOut",
-    },
-  },
-};
-
 const Menu = () => {
   const { scrollYProgress } = useViewportScroll();
 
-  const yPosFast = useTransform(scrollYProgress, [0.3, 0.9], [0, -450]);
+  const yPosFast = useTransform(scrollYProgress, [0.1, 0.9], [0, -450]);
   const yPosStay = useTransform(scrollYProgress, [0.1, 0.8], [0, 400]);
   const rotSlow = useTransform(scrollYProgress, [0.1, 0.6], [20, 60]);
 
@@ -72,12 +47,41 @@ const Menu = () => {
           style={{ rotateZ: rotSlow, y: yPosStay }}
         ></motion.div>
         <motion.div
-          className={styles.blue}
+          className={styles.green}
           style={{ y: yPosFast, x: yPosFast }}
+        ></motion.div>
+        <motion.div
+          className={styles.blue}
+          style={{ y: yPosFast }}
         ></motion.div>
       </div>
     </section>
   );
+};
+
+const scaleMotion = {
+  rest: {
+    color: "grey",
+    y: 0,
+    scale: 1,
+    rotate: 0,
+    transition: {
+      duration: 0.5,
+      type: "tween",
+      ease: "easeIn",
+    },
+  },
+  hover: {
+    color: "blue",
+    y: -30,
+    scale: 1.1,
+    rotate: 5,
+    transition: {
+      duration: 0.4,
+      type: "tween",
+      ease: "easeOut",
+    },
+  },
 };
 
 const meals = [
